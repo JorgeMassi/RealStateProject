@@ -1,15 +1,16 @@
-﻿using RealState.Application.Interfaces.Generics;
+﻿using RealState.Application.Dto;
+using RealState.Application.Interfaces.Generics;
 using RealState.Domian.Model;
 
 namespace RealState.Application.Interfaces.Properties
 {
-    public interface IPropertyService :IService <Property, Guid>
+    public interface IPropertyService :IService <PropertyDto, Guid>
     {
-        Task<IEnumerable<Property>> GetAll();
-        Task<Property> GetById(Guid id);
-        Task<Property> Create(Property porperty);
-        Task<Property> Update(Property porperty);
-        Task<Property> Delete(Property porperty);
-        Task<Property> Delete(Guid id);
+        Task<IEnumerable<PropertyDto>> GetAll();
+        Task<PropertyDto> GetById(Guid id);
+        Task<PropertyDto> Create(PropertyDto porperty);
+        Task<PropertyDto> Update(PropertyDto porperty);
+        Task<PropertyDto> Delete(PropertyDto porperty);
+        Task<PropertyDto> Delete(Guid id);
     }
 }

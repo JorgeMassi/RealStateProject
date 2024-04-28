@@ -14,7 +14,7 @@ namespace RealState.Application.Services
             _propertyRepository = propertyRepository;
         }
 
-        public Task<Property> Create(Property property)
+        public Task<Property> Create(PropertyDto property)
         {
             return _propertyRepository.Create(property);
         }
