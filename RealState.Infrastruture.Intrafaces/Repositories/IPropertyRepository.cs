@@ -5,5 +5,6 @@ namespace RealState.Infrastruture.Interfaces.Repositories
 {
     public interface IPropertyRepository : IRepository<Property, Guid>
     {
+      
     }
 }

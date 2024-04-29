@@ -26,13 +26,14 @@ namespace RealState.Services.WebApi.Controllers
         [HttpGet("{id}")]
         public PropertyDto Get(Guid id)
         {
-            return _propertyService.GetById(id);
+            return null;
+            //return _propertyService.GetById(id);
         }
 
         [HttpPost]
         public void Post([FromBody] PropertyDto property)
         {
-            _propertyService.Add(property);
+            _propertyService.Create(property);
         }
 
         [HttpPut]

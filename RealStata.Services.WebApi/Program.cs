@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using RealState.Infrastruture.Data.Contexts;
+using RealState.Infrastruture.IoC;
 
 internal class Program
 {
@@ -8,7 +9,10 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+       
      
+        //builder.Services.AddWebApiConfiguration(configuration);
+
         builder.Services.AddControllers();
         builder.Services.AddDbContext<RealStateContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("StringSQL")));

@@ -1,7 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RealState.Application.Interfaces.Generics;
 using RealState.Application.Interfaces.Properties;
 using RealState.Application.Services;
+using RealState.Infrastruture.Data.Contexts;
+using RealState.Infrastruture.Data.Repositories;
+using RealState.Infrastruture.Interfaces.Repositories;
 
 namespace RealState.Infrastruture.IoC
 {
@@ -25,11 +30,14 @@ namespace RealState.Infrastruture.IoC
 
         private static void AddCommonConfigurations(this IServiceCollection services, IConfiguration config)
         {
+        //    services.AddDbContext<RealStateContext>(options =>
+        //options.UseSqlServer(config.GetConnectionString("StringSQL")));
+
             // Add services
             services.AddScoped<IPropertyService, PropertyService>();
 
             // Add Repos
-            //services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<IPropertyRepository, PropertyRepository>();
 
         }
     }

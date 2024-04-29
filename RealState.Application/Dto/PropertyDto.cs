@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace RealState.Application.Dto
 {
-    public class PropertyDto
+    public class PropertyDto 
     {
-        public class Property
-        {
+       
             public Guid Id { get; set; }
            
             public Address? Location { get; set; }
             
-        }
     }
 }
