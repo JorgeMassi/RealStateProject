@@ -1,14 +1,17 @@
 
+using Microsoft.EntityFrameworkCore;
+using RealState.Infrastruture.Data.Contexts;
+
 internal class Program
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
-       builder.Services.AddWebApiConfiguration(builder.Configuration);
-
      
         builder.Services.AddControllers();
+        builder.Services.AddDbContext<RealStateContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("StringSQL")));
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();

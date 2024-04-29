@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RealState.Application\RealState.Application.csproj" />
+    <ProjectReference Include="..\RealState.Infrastruture.Data.MSSQL\RealState.Infrastruture.Data.MSSQL.csproj" />
     <ProjectReference Include="..\RealState.Infrastruture.IoC\RealState.Infrastruture.IoC.csproj" />
   </ItemGroup>
 
