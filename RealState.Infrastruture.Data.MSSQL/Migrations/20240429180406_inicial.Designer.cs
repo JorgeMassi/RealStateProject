@@ -11,7 +11,7 @@ using RealState.Infrastruture.Data.Contexts;
 
 namespace RealState.Infrastruture.Data.MSSQL.Migrations
 {
-    [DbContext(typeof(RealStateContext))]
+    [DbContext(typeof(RealStateDbContext))]
     [Migration("20240429180406_inicial")]
     partial class inicial
     {

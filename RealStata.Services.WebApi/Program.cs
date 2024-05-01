@@ -14,7 +14,7 @@ internal class Program
         //builder.Services.AddWebApiConfiguration(configuration);
 
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<RealStateContext>(options =>
+        builder.Services.AddDbContext<RealStateDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("StringSQL")));
 
         builder.Services.AddEndpointsApiExplorer();

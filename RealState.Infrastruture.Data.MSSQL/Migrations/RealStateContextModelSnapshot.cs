@@ -10,7 +10,7 @@ using RealState.Infrastruture.Data.Contexts;
 
 namespace RealState.Infrastruture.Data.MSSQL.Migrations
 {
-    [DbContext(typeof(RealStateContext))]
+    [DbContext(typeof(RealStateDbContext))]
     partial class RealStateContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
