@@ -1,4 +1,5 @@
 ﻿
+using RealState.Application.Dto;
 using RealState.Application.Interfaces.Properties;
 using RealState.Domian.Model;
 using RealState.Infrastruture.Interfaces.Repositories;
@@ -14,34 +15,67 @@ namespace RealState.Application.Services
             _propertyRepository = propertyRepository;
         }
 
-        public Task<Property> Create(Property property)
+        public async Task<PropertyDto> Create(PropertyDto propertyDto)
         {
-            return _propertyRepository.Create(property);
+            Property property = new Property();
+            property.Id = propertyDto.Id;
+            property.Location = propertyDto.Location;
+
+            await  _propertyRepository.Create(property );
+
+            return propertyDto;
         }
 
-        public async Task<Property> Delete(Property property)
+        public Task< PropertyDto> Delete(PropertyDto propertyDto)
         {
-            return _propertyRepository.Delete(property);
+            Property property = new Property();
+            property.Id = propertyDto.Id;
+            property.Location = propertyDto.Location;
+
+            _propertyRepository.Delete(property);
+
+            return Delete(propertyDto);
+
         }
 
-        public Task<Property> Delete(Guid id)
+        public Task<PropertyDto> Delete(Guid id)
         {
-            return _propertyRepository.Delete(id);
+            Property property = new Property();
+            PropertyDto propertyDto = new PropertyDto();
+            property.Id = propertyDto.Id;
+
+            _propertyRepository.Delete(property);
+            return Delete(propertyDto.Id);
         }
 
-        public Task<IEnumerable<Property>> GetAll()
+        public Task<IEnumerable<PropertyDto>> GetAll()
         {
-            return _propertyRepository.GetAll();
+
+            _propertyRepository.GetAll();
+
+            return GetAll();
         }
 
-        public Task<Property> GetById(Guid id)
+        public Task<PropertyDto> GetById(Guid id)
         {
-            return _propertyRepository.GetById(id);
+            Property property = new Property();
+            PropertyDto propertyDto = new PropertyDto();
+            property.Id = propertyDto.Id;
+
+            _propertyRepository.GetById(property.Id);
+           
+            return GetById(propertyDto.Id);
         }
 
-        public async Task<Property> Update(Property property)
+        public Task<PropertyDto> Update(PropertyDto propertyDto)
         {
-            return _propertyRepository.Update(property);
+            Property property = new Property();
+            property.Id = propertyDto.Id;
+            property.Location = propertyDto.Location;
+            _propertyRepository.Update(property);
+
+            return Update(propertyDto);
+
         }
     }
 }
