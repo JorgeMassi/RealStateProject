@@ -1,5 +1,6 @@
 ﻿using RealState.Domian.Model.Financial;
-using RealState.Domian.Model.User;
+
+using RealState.Domian.Model.Users;
 
 namespace RealState.Domian.Model.Propertys
 {
@@ -10,17 +11,16 @@ namespace RealState.Domian.Model.Propertys
         public Address? Location { get; set; }
         public int YearBuilt { get; set; }
         public double TotalArea { get; set; }
-        public int Rooms { get; set; }
+        public Rooms TypedOfRooms { get; set; }
         public int Floors { get; set; }
-        public int Bathrooms { get; set; }
-        public bool Garage { get; set; }
-        public int NumberOfParking { get; set; }
+        public Bathrooms Bathrooms { get; set; }
+        public Garage Garage { get; set; }
         public bool Elevator { get; set; }
         public string? EnergyRating { get; set; }
         public Condition? ConditionOfUse { get; set; }
         public string? Description { get; set; }
-        public string? Features { get; set; }
-        public TypeOfuser? User { get; set; }
+        //public List<string?> Features { get; set; }
+        public TypeOfUser? User { get; set; }
         public Price? Price { get; set; }
     }
 }
