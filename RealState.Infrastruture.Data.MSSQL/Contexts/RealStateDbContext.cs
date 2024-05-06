@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RealState.Domian.Model;
+using RealState.Domian.Model.Propertys;
 
 namespace RealState.Infrastruture.Data.Contexts;
 

@@ -1,4 +1,4 @@
-﻿namespace RealState.Domian.Model
+﻿namespace RealState.Domian.Model.Financial
 {
     public class Price
     {

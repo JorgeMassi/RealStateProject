@@ -1,7 +1,7 @@
 ﻿
 using RealState.Application.Dto;
 using RealState.Application.Interfaces.Properties;
-using RealState.Domian.Model;
+using RealState.Domian.Model.Propertys;
 using RealState.Infrastruture.Interfaces.Repositories;
 
 namespace RealState.Application.Services

@@ -1,4 +1,4 @@
-﻿namespace RealState.Domian.Model
+﻿namespace RealState.Domian.Model.Propertys
 {
     public class Address
     {

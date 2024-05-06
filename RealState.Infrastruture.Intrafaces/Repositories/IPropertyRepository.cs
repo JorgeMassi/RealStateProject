@@ -1,4 +1,4 @@
-﻿using RealState.Domian.Model;
+﻿using RealState.Domian.Model.Propertys;
 using RealState.Infrastruture.Interfaces.Generics;
 
 namespace RealState.Infrastruture.Interfaces.Repositories

@@ -1,4 +1,7 @@
-﻿namespace RealState.Domian.Model
+﻿using RealState.Domian.Model.User;
+using RealState.Domian.Model.Users;
+
+namespace RealState.Domian.Model.Users
 {
     public class User
     {
@@ -8,7 +11,7 @@
         public string? Name { get; set; }
         public string? Password { get; set; }
         public bool IsAdmin { get; set; } = false;
-        public enum TypeOfuser { Agent, Developer, Costumer }
+        public TypeOfuser UserTyped {  get; set; }
         public bool? IsBlocked { get; set; }
     }
 }

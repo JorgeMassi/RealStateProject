@@ -1,4 +1,4 @@
-﻿using RealState.Domian.Model;
+﻿using RealState.Domian.Model.Propertys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
