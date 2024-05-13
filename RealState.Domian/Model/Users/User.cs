@@ -10,7 +10,7 @@ namespace RealState.Domian.Model.Users
         public string? Name { get; set; }
         public string? Password { get; set; }
         public TypeOfUser? UserTyped {  get; set; }
-        public Favourites Favourites { get; set; }
+        public Favourites? Favourites { get; set; }
 
 
     }

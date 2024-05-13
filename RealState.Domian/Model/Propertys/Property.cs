@@ -11,10 +11,10 @@ namespace RealState.Domian.Model.Propertys
         public Address? Location { get; set; }
         public int YearBuilt { get; set; }
         public double TotalArea { get; set; }
-        public Rooms TypedOfRooms { get; set; }
+        public Rooms? TypedOfRooms { get; set; }
         public int Floors { get; set; }
-        public Bathrooms Bathrooms { get; set; }
-        public Garage Garage { get; set; }
+        public Bathrooms? Bathrooms { get; set; }
+        public Garage? Garage { get; set; }
         public bool Elevator { get; set; }
         public string? EnergyRating { get; set; }
         public Condition? ConditionOfUse { get; set; }
