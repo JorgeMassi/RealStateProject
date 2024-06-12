@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RealState.Domian.Model;
-using RealState.Infrastruture.Data.Generics;
+using RealState.Infrastruture.Data.MSSQL.Generics;
 using RealState.Infrastruture.Interfaces.Repositories;
+
 
 namespace RealState.Infrastruture.Data.Repositories
 {

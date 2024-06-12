@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RealState.Infrastruture
+namespace RealState.Infrastruture.Interfaces.Generics
 {
     public interface IRepository<TEntity, TPrimaryKey>
     {

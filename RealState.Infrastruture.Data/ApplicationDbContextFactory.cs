@@ -1,9 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
-namespace RealState.Infrastruture;
 
- internal class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
-    {
+namespace RealState.Infrastruture.Data;
+
+internal class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
+{
 
         static string? connectionString = null;
 
@@ -14,7 +17,7 @@ namespace RealState.Infrastruture;
                .AddJsonFile("appsettings.Development.json", true, true)
                .Build();
 
-            connectionString = config["ConnectionStrings:RemedyCS"];
+            connectionString = config["ConnectionStrings:StringSQL"];
             Console.WriteLine("ConnectionString:" + connectionString);
         }
 
@@ -27,6 +30,5 @@ namespace RealState.Infrastruture;
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
-    }
 }
 

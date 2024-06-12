@@ -1,7 +1,6 @@
 ﻿
 using RealState.Application.Interfaces.Properties;
 using RealState.Domian.Model;
-using RealState.Infrastruture.Interfaces.Repositories;
 
 namespace RealState.Application.Services
 {
@@ -21,7 +20,7 @@ namespace RealState.Application.Services
 
         public async Task<Property> Delete(Property property)
         {
-            return _propertyRepository.Delete(property);
+            return await _propertyRepository.Delete(property);
         }
 
         public Task<Property> Delete(Guid id)
@@ -41,7 +40,7 @@ namespace RealState.Application.Services
 
         public async Task<Property> Update(Property property)
         {
-            return _propertyRepository.Update(property);
+            return await _propertyRepository.Update(property);
         }
     }
 }
