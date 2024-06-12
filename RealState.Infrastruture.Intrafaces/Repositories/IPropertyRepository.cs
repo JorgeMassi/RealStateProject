@@ -1,7 +1,7 @@
 ﻿using RealState.Domian.Model;
 using RealState.Infrastruture.Interfaces.Generics;
 
-namespace RealState.Infrastruture.Interfaces.Repositories
+namespace RealState.Infrastruture
 {
     public interface IPropertyRepository : IRepository<Property, Guid>
     {

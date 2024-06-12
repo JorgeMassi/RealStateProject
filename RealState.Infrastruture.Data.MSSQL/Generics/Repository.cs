@@ -3,7 +3,7 @@ using RealState.Infrastruture.Interfaces.Generics;
 
 
 
-namespace RealState.Infrastruture.Data.Generics
+namespace RealState.Infrastruture
 {
     public class Repository<TEntity, TId> : IRepository<TEntity, TId> where TEntity : class
     {
