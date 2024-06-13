@@ -1,7 +1,6 @@
 ﻿using RealState.Application.Interfaces.Properties;
 using RealState.Application.Interfaces.UnitOfWork;
 using RealState.Domian.Model;
-using RealState.Infrastruture.Interfaces.Generics.Repositories;
 
 namespace RealState.Application.Services
 {

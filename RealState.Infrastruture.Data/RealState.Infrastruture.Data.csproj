@@ -36,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RealState.Domian\RealState.Domian.csproj" />
+    <ProjectReference Include="..\RealState.Application\RealState.Application.csproj" />
   </ItemGroup>
 
 </Project>

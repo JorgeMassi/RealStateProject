@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RealState.Infrastruture.Interfaces.Generics;
+using RealState.Application.Interfaces.Generics;
 
 
 

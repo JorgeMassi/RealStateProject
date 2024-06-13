@@ -8,3 +8,13 @@
 | `Scaffold-DbContext` | Generates a DbContext and entity type classes for a specified database. This is called reverse engineering. |
 | `Get-DbContext` | Gets information about a DbContext type. |
 | `Drop-Database` | Drops the database. |
+
+
+CMD
+
+---
+dotnet ef migrations add ( name of migrations)
+
+dotnet ef database update
+
+

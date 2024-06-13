@@ -1,8 +1,7 @@
-﻿
+﻿using RealState.Application.Interfaces.UnitOfWork;
+using RealState.Infrastruture.Data.Repositories.ApplicationDbContexts;
 
-using RealState.Application.Interfaces.UnitOfWork;
-
-namespace RealState.Infrastruture.Data;
+namespace RealState.Infrastruture.Data.Repositories.UnitsOkWorks;
 
 public class UnitOfWork : IUnitOfWork
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RealState.Domian.Model;
 
-namespace RealState.Infrastruture.Data;
+namespace RealState.Infrastruture.Data.Repositories.ApplicationDbContexts;
 
 public class ApplicationDbContext : DbContext
 {

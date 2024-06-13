@@ -4,8 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using RealState.Application.Interfaces.Properties;
 using RealState.Application.Interfaces.UnitOfWork;
 using RealState.Application.Services;
-using RealState.Infrastruture.Data;
-using RealState.Infrastruture.Data.Repositories;
+using RealState.Infrastruture.Data.Repositories.ApplicationDbContexts;
+using RealState.Infrastruture.Data.Repositories.Properties;
+using RealState.Infrastruture.Data.Repositories.UnitsOkWorks;
 
 
 namespace RealState.Infrastruture.IoC;
