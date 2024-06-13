@@ -10,9 +10,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\RealState.Domian\RealState.Domian.csproj" />
-    <ProjectReference Include="..\RealState.Application\RealState.Application.csproj" />
-  </ItemGroup>
-
 </Project>

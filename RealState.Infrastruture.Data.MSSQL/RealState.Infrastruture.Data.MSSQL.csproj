@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\RealState.Domian\RealState.Domian.csproj" />
-    <ProjectReference Include="..\RealState.Infrastruture.Intrafaces\RealState.Infrastruture.Interfaces.csproj" />
-  </ItemGroup>
-
 </Project>

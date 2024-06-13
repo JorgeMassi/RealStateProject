@@ -5,7 +5,7 @@ namespace RealState.Infrastruture.Data;
 
 public class ApplicationDbContext : DbContext
 {
-    public DbSet<Property> Apartments { get; set; }
+    public DbSet<Property> Properties { get; set; }
 
     public ApplicationDbContext(DbContextOptions options) : base(options) { }
 

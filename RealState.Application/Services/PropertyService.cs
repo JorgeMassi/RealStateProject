@@ -1,46 +1,58 @@
-﻿
-using RealState.Application.Interfaces.Properties;
+﻿using RealState.Application.Interfaces.Properties;
+using RealState.Application.Interfaces.UnitOfWork;
 using RealState.Domian.Model;
+using RealState.Infrastruture.Interfaces.Generics.Repositories;
 
 namespace RealState.Application.Services
 {
     public class PropertyService : IPropertyService
     {
-       private readonly IPropertyRepository _propertyRepository;
+        private readonly IPropertyRepository _repository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public PropertyService(IPropertyRepository propertyRepository)
+        public PropertyService(IPropertyRepository repository, IUnitOfWork unitOfWork)
         {
-            _propertyRepository = propertyRepository;
+            _repository = repository;
+            _unitOfWork = unitOfWork;
         }
 
-        public Task<Property> Create(Property property)
+        public async Task<Property> Create(Property property)
         {
-            return _propertyRepository.Create(property);
+            property.Id = Guid.NewGuid();
+            var entity = await _repository.Create(property);
+            await _unitOfWork.Commit();
+            return entity;
         }
 
         public async Task<Property> Delete(Property property)
         {
-            return await _propertyRepository.Delete(property);
+            var entity = _repository.Delete(property);
+            await _unitOfWork.Commit();
+            return entity;
         }
 
-        public Task<Property> Delete(Guid id)
+        public async Task<Property> Delete(Guid id)
         {
-            return _propertyRepository.Delete(id);
+            var entity = await _repository.Delete(id);
+            await _unitOfWork.Commit();
+            return entity;
         }
 
         public Task<IEnumerable<Property>> GetAll()
         {
-            return _propertyRepository.GetAll();
+            return _repository.GetAll();
         }
 
         public Task<Property> GetById(Guid id)
         {
-            return _propertyRepository.GetById(id);
+            return _repository.GetById(id);
         }
 
         public async Task<Property> Update(Property property)
         {
-            return await _propertyRepository.Update(property);
+            var entity = _repository.Update(property);
+            await _unitOfWork.Commit();
+            return entity;
         }
     }
 }
