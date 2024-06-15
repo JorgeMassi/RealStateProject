@@ -1,0 +1,11 @@
+<div>
+    <button type="button" (click)="loadStaticData()">Change to Static</button>
+</div>
+<div>
+    <button type="button" (click)="loadDynamicData()">Change to Dynamic</button>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div *ngFor="let property of property">
+    </div>
+</div>
