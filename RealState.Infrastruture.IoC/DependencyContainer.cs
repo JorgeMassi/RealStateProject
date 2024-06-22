@@ -21,7 +21,7 @@ public static class DependencyContainer
 
             // Repos
 
-            services.AddScoped<PropertyRepository, PropertyRepository>();
+            services.AddScoped<IPropertyRepository, PropertyRepository>();
             services.AddScoped<DbContext, ApplicationDbContext>();
 
 
