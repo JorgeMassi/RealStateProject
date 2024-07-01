@@ -40,9 +40,6 @@ public static class DependencyContainer
             });
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
-            // TODO: Seed data
-            // if (environment.ToLower() == "development") 
-            //    services.AddScoped<DbInitializer>();
 
             return services;
         }

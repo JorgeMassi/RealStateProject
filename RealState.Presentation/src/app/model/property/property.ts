@@ -1,16 +1,17 @@
 import { PhysicalLocation } from "../physicalLocation/physical-location";
 
+
 export class Property {
     constructor()
     {
         this.id = '';
-        this.price = 0;
+        this.price = new BusinessPrice;
         this.description = 'No description';
         this.image = '';
         this.location = new PhysicalLocation();
     }
     id: String;
-    price: Number;
+    price: BusinessPrice;
     description: String;
     image: String;
     location : PhysicalLocation;
