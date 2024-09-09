@@ -7,7 +7,7 @@ namespace RealState.API
         private static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            
             // Add services to the container.
             builder.Services.AddWebApiConfigurations(builder.Configuration);
 

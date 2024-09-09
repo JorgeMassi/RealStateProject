@@ -1,12 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RealState.Application.Interfaces.Addresses;
+using RealState.Application.Interfaces.Prices;
 using RealState.Application.Interfaces.Properties;
+using RealState.Application.Interfaces.Typologies;
 using RealState.Application.Interfaces.UnitOfWork;
+using RealState.Application.Interfaces.Users;
 using RealState.Application.Services;
+using RealState.Infrastruture.Data.Repositories.Addresses;
 using RealState.Infrastruture.Data.Repositories.ApplicationDbContexts;
+using RealState.Infrastruture.Data.Repositories.Prices;
 using RealState.Infrastruture.Data.Repositories.Properties;
+using RealState.Infrastruture.Data.Repositories.Typologies;
 using RealState.Infrastruture.Data.Repositories.UnitsOkWorks;
+using RealState.Infrastruture.Data.Repositories.Users;
 
 
 namespace RealState.Infrastruture.IoC;
@@ -18,19 +26,26 @@ public static class DependencyContainer
         {
             // Services
             services.AddScoped<IPropertyService, PropertyService>();
-
+            services.AddScoped<ITypologyService, TypologyService>();
+            services.AddScoped<IAddressService, AddressService>();
+            services.AddScoped<IPriceService, PriceService>();
+            services.AddScoped<IUserService, UserService>();
             // Repos
 
             services.AddScoped<IPropertyRepository, PropertyRepository>();
+            services.AddScoped<ITypologyRepository, TypologyRepository>();
+            services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<IPriceRepository, PriceRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<DbContext, ApplicationDbContext>();
 
 
 
             // Database Config
-            services.AddRemedyDatabase(config);
+            services.AddRealEstateDatabase(config);
         }
 
-        public static IServiceCollection AddRemedyDatabase(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddRealEstateDatabase(this IServiceCollection services, IConfiguration config)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddDbContext<ApplicationDbContext>(options =>

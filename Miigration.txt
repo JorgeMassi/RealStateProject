@@ -63,3 +63,11 @@ Commands:
   ng generate service [name]           Creates a new, generic service definition in the given project.                [aliases: s] 
   ng generate service-worker           Pass this schematic to the "run" command to create a service worker
   ng generate web-worker [name]        Creates a new, generic web worker definition in the given project.
+
+
+  to run at vscode
+
+  dotnet build 
+
+  dotnet watch -lp https
+  dotnet watch -lp http
