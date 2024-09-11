@@ -1,0 +1,25 @@
+<h1>cards!!</h1>
+<!-- cards.component.html -->
+<div class="card">
+  <!-- Conditional Image -->
+  <!--<img *ngIf="property.imageUrl" [src]="property.imageUrl" alt="{{property.typology?.name}}" class="card-img-top">-->
+  
+  <div class="card-body">
+    <h5 class="card-title">{{ property.typology?.name }} - {{ property.location?.city }}</h5>
+    <p class="card-text">{{ property.description }}</p>
+    <p class="card-price">Price: ${{ property.price?.priceValue }}</p>
+    <p class="card-location">Location: {{ property.location?.city }}, {{ property.location?.location }}</p>
+    <p class="card-features">Features: {{ property.features }}</p>
+    <p class="card-year">Year Built: {{ property.yearBuilt }}</p>
+    <p class="card-area">Total Area: {{ property.totalArea }} M²</p>
+    <p class="card-rooms">Rooms: {{ property.rooms }}</p>
+    <p class="card-floors">Floors: {{ property.floors }}</p>
+    <p class="card-bathrooms">Bathrooms: {{ property.bathrooms }}</p>
+    <p class="card-garage">Garage: {{ property.garage ? 'Yes' : 'No' }}</p>
+    <p class="card-energy-rating">Energy Rating: {{ property.energyRating }}</p>
+    <p class="card-condition">Condition: {{ property.condition }}</p>
+
+    <!-- View Details Button -->
+    <!--<button (click)="navigateToDetails()" class="btn btn-primary">View Details</button>-->
+  </div>
+</div>
