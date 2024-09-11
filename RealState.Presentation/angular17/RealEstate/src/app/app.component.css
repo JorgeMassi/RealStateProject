@@ -104,3 +104,6 @@
     padding: 10px;
   }
 }
+html, body {
+  overflow-y: auto; /* Adiciona a barra de rolagem apenas quando necessário */
+}

@@ -6,7 +6,7 @@ import { User } from "../Users/user";
 
 export class Property {
     id: string;
-    typology: Typology;
+    typology?: Typology;
     location: Address;
     yearBuilt: number;
     totalArea: number;

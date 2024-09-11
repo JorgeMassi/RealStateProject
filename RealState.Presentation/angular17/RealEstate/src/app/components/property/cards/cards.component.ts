@@ -23,7 +23,7 @@ export class CardsComponent {
   
   @Input()
   property!: Property;
-  typology!: Typology;
+  typology?: Typology;
   user!: User;
   price!: Price;
   address! : Address;
