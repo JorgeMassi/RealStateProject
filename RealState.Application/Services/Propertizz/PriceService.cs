@@ -1,12 +1,6 @@
-﻿using RealState.Application.Interfaces.Addresses;
-using RealState.Application.Interfaces.Propertizz.Prices;
+﻿using RealState.Application.Interfaces.Propertizz.Prices;
 using RealState.Application.Interfaces.UnitOfWork;
 using RealState.Domian.Model.Properties;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RealState.Application.Services.Propertizz
 {

@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Properties;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealState.Application.Interfaces.Propertizz.Addresses;
 using RealState.Domian.Model.Properties;
-using System.Net;
 
 namespace RealState.API.Controllers
 {

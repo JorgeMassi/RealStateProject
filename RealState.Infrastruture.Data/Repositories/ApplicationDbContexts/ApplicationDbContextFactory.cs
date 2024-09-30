@@ -13,9 +13,12 @@ internal class ApplicationDbContextFactory : IDesignTimeDbContextFactory<Applica
     static ApplicationDbContextFactory()
     {
         IConfiguration config = new ConfigurationBuilder()
-           .SetBasePath(Directory.GetCurrentDirectory())
-           .AddJsonFile("appsettings.Development.json", true, true)
-           .Build();
+           //.SetBasePath(Directory.GetCurrentDirectory())
+           //.AddJsonFile("appsettings.Development.json", true, true)
+           //.Build();
+           .SetBasePath(Directory.GetParent(".").ToString())
+           .AddJsonFile("RealState.API\\appsettings.json", true, true)
+            .Build();
 
         connectionString = config["ConnectionStrings:StringSQL"];
         Console.WriteLine("ConnectionString:" + connectionString);

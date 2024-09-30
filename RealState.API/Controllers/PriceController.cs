@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Properties;
+﻿using Microsoft.AspNetCore.Mvc;
 using RealState.Application.Interfaces.Propertizz.Prices;
 using RealState.Domian.Model.Properties;
 

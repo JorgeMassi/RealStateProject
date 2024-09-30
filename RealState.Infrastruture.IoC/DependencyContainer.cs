@@ -25,19 +25,28 @@ public static class DependencyContainer
         public static void AddWebApiConfigurations(this IServiceCollection services, IConfiguration config)
 
         {
-            // Services
+            // Property
             services.AddScoped<IPropertyService, PropertyService>();
-            services.AddScoped<ITypologyService, TypologyService>();
-            services.AddScoped<IAddressService, AddressService>();
-            services.AddScoped<IPriceService, PriceService>();
-            services.AddScoped<IUserService, UserService>();
-            // Repos
-
             services.AddScoped<IPropertyRepository, PropertyRepository>();
+
+            //Typology
+            services.AddScoped<ITypologyService, TypologyService>();
             services.AddScoped<ITypologyRepository, TypologyRepository>();
+
+            //Address        
+            services.AddScoped<IAddressService, AddressService>();
             services.AddScoped<IAddressRepository, AddressRepository>();
+
+            //Price
+            services.AddScoped<IPriceService, PriceService>();
             services.AddScoped<IPriceRepository, PriceRepository>();
+
+            //User  
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
+
+
+
             services.AddScoped<DbContext, ApplicationDbContext>();
 
 

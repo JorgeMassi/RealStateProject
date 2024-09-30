@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Generics;
 using RealState.Application.Interfaces.Propertizz.Properties;
-using RealState.Application.Services;
 using RealState.Domian.Model.Properties;
 
 

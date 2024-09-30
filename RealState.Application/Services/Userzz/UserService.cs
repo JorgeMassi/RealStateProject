@@ -1,13 +1,8 @@
 ﻿using RealState.Application.Dtos.RegisterDto;
 using RealState.Application.Interfaces.UnitOfWork;
-using RealState.Application.Interfaces.Userzz.DataProtection;
 using RealState.Application.Interfaces.Userzz.Users;
 using RealState.Domian.Model.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RealState.Application.Services.Userzz
 {
