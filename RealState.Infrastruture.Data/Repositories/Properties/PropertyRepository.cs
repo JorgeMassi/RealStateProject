@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RealState.Application.Interfaces.Properties;
-using RealState.Domian.Model;
+using RealState.Application.Interfaces.Propertizz.Properties;
+using RealState.Domian.Model.Properties;
 using RealState.Infrastruture.Data.Repositories.Generics;
 
 namespace RealState.Infrastruture.Data.Repositories.Properties

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Prices;
 using RealState.Application.Interfaces.Properties;
-using RealState.Domian.Model;
+using RealState.Application.Interfaces.Propertizz.Prices;
+using RealState.Domian.Model.Properties;
 
 namespace RealState.API.Controllers
 {

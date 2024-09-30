@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RealState.Application.Interfaces.Addresses;
+using RealState.Application.Interfaces.Propertizz.Addresses;
 using RealState.Application.Interfaces.Typologies;
-using RealState.Domian.Model;
+using RealState.Domian.Model.Properties;
 using RealState.Infrastruture.Data.Repositories.Generics;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Typologies;
-using RealState.Domian.Model;
+using RealState.Application.Interfaces.Propertizz.Typologies;
+using RealState.Domian.Model.Properties;
 
 namespace RealState.API.Controllers
 {

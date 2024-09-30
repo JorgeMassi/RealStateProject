@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RealState.Application.Interfaces.Users;
-using RealState.Domian.Model;
+using RealState.Application.Interfaces.Userzz.Users;
+using RealState.Domian.Model.Users;
 
 namespace RealState.API.Controllers
 {

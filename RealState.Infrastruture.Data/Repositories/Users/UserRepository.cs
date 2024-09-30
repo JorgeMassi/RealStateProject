@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RealState.Application.Interfaces.Typologies;
-using RealState.Application.Interfaces.Users;
-using RealState.Domian.Model;
+using RealState.Application.Interfaces.Userzz.Users;
+using RealState.Domian.Model.Users;
 using RealState.Infrastruture.Data.Repositories.Generics;
 using System;
 using System.Collections.Generic;
