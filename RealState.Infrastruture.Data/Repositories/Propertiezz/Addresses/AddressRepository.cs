@@ -3,7 +3,7 @@ using RealState.Application.Interfaces.Propertizz.Addresses;
 using RealState.Domian.Model.Properties;
 using RealState.Infrastruture.Data.Repositories.Generics;
 
-namespace RealState.Infrastruture.Data.Repositories.Addresses
+namespace RealState.Infrastruture.Data.Repositories.Propertiezz.Addresses
 {
     public class AddressRepository : Repository<Address, int>, IAddressRepository
     {

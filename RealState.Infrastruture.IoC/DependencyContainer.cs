@@ -9,13 +9,13 @@ using RealState.Application.Interfaces.UnitOfWork;
 using RealState.Application.Interfaces.Userzz.Users;
 using RealState.Application.Services.Propertizz;
 using RealState.Application.Services.Userzz;
-using RealState.Infrastruture.Data.Repositories.Addresses;
 using RealState.Infrastruture.Data.Repositories.ApplicationDbContexts;
-using RealState.Infrastruture.Data.Repositories.Prices;
-using RealState.Infrastruture.Data.Repositories.Properties;
-using RealState.Infrastruture.Data.Repositories.Typologies;
+using RealState.Infrastruture.Data.Repositories.Propertiezz.Addresses;
+using RealState.Infrastruture.Data.Repositories.Propertiezz.Prices;
+using RealState.Infrastruture.Data.Repositories.Propertiezz.Properties;
+using RealState.Infrastruture.Data.Repositories.Propertiezz.Typologies;
 using RealState.Infrastruture.Data.Repositories.UnitsOkWorks;
-using RealState.Infrastruture.Data.Repositories.Users;
+using RealState.Infrastruture.Data.Repositories.Userzz.Users;
 
 
 namespace RealState.Infrastruture.IoC;

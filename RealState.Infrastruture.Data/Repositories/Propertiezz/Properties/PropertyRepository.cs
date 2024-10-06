@@ -3,7 +3,7 @@ using RealState.Application.Interfaces.Propertizz.Properties;
 using RealState.Domian.Model.Properties;
 using RealState.Infrastruture.Data.Repositories.Generics;
 
-namespace RealState.Infrastruture.Data.Repositories.Properties
+namespace RealState.Infrastruture.Data.Repositories.Propertiezz.Properties
 {
     public class PropertyRepository : Repository<Property, Guid>, IPropertyRepository
     {

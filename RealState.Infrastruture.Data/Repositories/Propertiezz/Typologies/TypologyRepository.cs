@@ -3,7 +3,7 @@ using RealState.Application.Interfaces.Propertizz.Typologies;
 using RealState.Domian.Model.Properties;
 using RealState.Infrastruture.Data.Repositories.Generics;
 
-namespace RealState.Infrastruture.Data.Repositories.Typologies
+namespace RealState.Infrastruture.Data.Repositories.Propertiezz.Typologies
 {
     public class TypologyRepository : Repository<Typology, int>, ITypologyRepository
     {

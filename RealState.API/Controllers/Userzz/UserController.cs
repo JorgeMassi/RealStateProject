@@ -2,7 +2,7 @@
 using RealState.Application.Interfaces.Userzz.Users;
 using RealState.Domian.Model.Users;
 
-namespace RealState.API.Controllers
+namespace RealState.API.Controllers.Userzz
 {
     [Route("api/[controller]")]
     [ApiController]

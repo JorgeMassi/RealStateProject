@@ -1,8 +1,8 @@
 ﻿using RealState.Application.Dtos.RegisterDto;
 using RealState.Application.Interfaces.UnitOfWork;
+using RealState.Application.Interfaces.Userzz.DataProtection;
 using RealState.Application.Interfaces.Userzz.Users;
 using RealState.Domian.Model.Users;
-
 
 namespace RealState.Application.Services.Userzz
 {
@@ -10,9 +10,9 @@ namespace RealState.Application.Services.Userzz
     {
         private readonly IUserRepository _repository;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly DataProtectionService _dataProtectionService;
+        private readonly IDataProtectionService _dataProtectionService;
 
-        public UserService(IUserRepository repository, IUnitOfWork unitOfWork, DataProtectionService dataProtectionService)
+        public UserService(IUserRepository repository, IUnitOfWork unitOfWork, IDataProtectionService dataProtectionService)
         {
             _repository = repository;
             _unitOfWork = unitOfWork;

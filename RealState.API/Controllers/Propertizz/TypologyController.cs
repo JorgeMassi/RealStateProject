@@ -2,7 +2,7 @@
 using RealState.Application.Interfaces.Propertizz.Typologies;
 using RealState.Domian.Model.Properties;
 
-namespace RealState.API.Controllers
+namespace RealState.API.Controllers.Propertizz
 {
     [Route("api/[controller]")]
     [ApiController]
